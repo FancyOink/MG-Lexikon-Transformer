@@ -1,15 +1,4 @@
-startCategory(c).
-
-['es gibt'] :: ([=n, c]).
-[liegen] :: ([=n,=n,c]).
-['Feld'] :: ([=f,n]).
-[im] :: ([=n,n]).
-
-['Bananen'] :: ([n]).
-['Kaese'] :: ([n]).
-
-[] :: ([=c4, =c4, f]).
-[] :: ([=n, =c4, n]).
+startCategory(c4).
 
 [zig] :: ([=c1, +zi, c2, -tausU]). % 10 * A	%Hauptfunktionen
 [zig] :: ([=c1, +zi, cundZIG]). % 10 * A
