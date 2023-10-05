@@ -54,9 +54,13 @@ writeLex(StreamIn,[epsLi(Fs,clean)|LIs],StreamOut) :-
 	(paintDebug ->writeln("Found clean Epsilon-LI.") ;true),
 	format(StreamIn,"[] :: ~w.~n",[Fs]),
 	writeLex(StreamIn,LIs,StreamOut).
-writeLex(StreamIn,[li(Exp,Fs,_)|LIs],StreamOut) :-
+	writeLex(StreamIn,[li(Exp,Fs,(_,[[]]))|LIs],StreamOut) :-
 	(paintDebug ->write("Copy LI:"), write(Exp),write(" :: "),writeln(Fs) ;true),
 	format(StreamIn,"~w :: ~w.~n",[Exp,Fs]),
+	writeLex(StreamIn,LIs,StreamOut).
+writeLex(StreamIn,[li(Exp,Fs,(FsH,EpsH))|LIs],StreamOut) :-
+	(paintDebug ->write("Copy LI:"), write(Exp),write(" :: "),writeln(Fs) ;true),
+	format(StreamIn,"~w :: ~w.~t%~w :: ~w, ~w~n",[Exp,Fs,Exp,FsH,EpsH]),
 	writeLex(StreamIn,LIs,StreamOut).
 writeLex(Stream,LIs,Stream):- paintDebug -> write("Something went wrong!\nThe List is: "),writeln(LIs);true.
 	
