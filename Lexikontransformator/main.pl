@@ -6,7 +6,7 @@
 :-['load'].
 
 
-mainDebug.	% comment this line, if debugMode should be off
+%mainDebug.	% comment this line, if debugMode should be off
 mainDebug :- false.
 
 

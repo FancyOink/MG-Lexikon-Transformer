@@ -1,205 +1,205 @@
 startCategory(c4(_)).
-[vier] :: [c1].
-[vier] :: [c1].
-[vier] :: [c1].
-[vier] :: [c1].
-[vier] :: [c1].
-[vier] :: [c1].
-[vier] :: [c1,-zeh].
-[neun] :: [c1].
-[neun] :: [c1,-zeh].
-[fuenf] :: [c1].
-[fuenf] :: [c1,-zeh].
-[drei] :: [c1].
-[drei] :: [c1,-zeh].
-[acht] :: [c1].
-[acht] :: [c1,-zeh].
-[zwoelf] :: [c4].
-[zwoelf] :: [c3].
-[zwoelf] :: [c2].
-[zwoelf] :: [c3,-taus].
+[vier] :: [c1].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[vier] :: [c1].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[vier] :: [c1].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[vier] :: [c1].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[vier] :: [c1].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[vier] :: [c1].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[vier] :: [c1,-zeh].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot)]
+[neun] :: [c1].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[neun] :: [c1,-zeh].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot)]
+[fuenf] :: [c1].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[fuenf] :: [c1,-zeh].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot)]
+[drei] :: [c1].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c1,+ssi,+zeh,+unU,c1,-ssi],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+ssi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[drei] :: [c1,-zeh].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c1,+ssi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot)]
+[acht] :: [c1].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zeh,c1],dot)]
+[acht] :: [c1,-zeh].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot)]
+[zwoelf] :: [c4].%[zwoelf] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[zwoelf] :: [c3].%[zwoelf] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[zwoelf] :: [c2].%[zwoelf] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[zwoelf] :: [c3,-taus].%[zwoelf] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [zwoelf] :: [c2,-tausU].
-[zwei] :: [c4].
-[zwei] :: [c3].
-[zwei] :: [c3,-taus].
-[zwei] :: [c2].
-[zwei] :: [cun].
-[zwei] :: [c1,-un].
-[zwei] :: [c1].
-[zwei] :: [c2,-tausU].
+[zwei] :: [c4].%[zwei] :: [c1,-unU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,c2],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[zwei] :: [c3].%[zwei] :: [c1,-unU], [epsLi([=c3,+taus,c3],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c1,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,c3],dot)]
+[zwei] :: [c3,-taus].%[zwei] :: [c1,-unU], [epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot)]
+[zwei] :: [c2].%[zwei] :: [c1,-unU], [epsLi([=c1,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c2],dot)]
+[zwei] :: [cun].%[zwei] :: [c1,-unU], [epsLi([=c1,+unU,cun],dot)]
+[zwei] :: [c1,-un].%[zwei] :: [c1,-unU], [epsLi([=c1,+unU,c1,-un],dot)]
+[zwei] :: [c1].%[zwei] :: [c1,-unU], [epsLi([=c1,+unU,c1],dot)]
+[zwei] :: [c2,-tausU].%[zwei] :: [c1,-unU], [epsLi([=c1,+unU,c2,-tausU],dot)]
 [zwei] :: [c1,-unU].
-[zwanzig] :: [c4].
-[zwanzig] :: [c3].
-[zwanzig] :: [c2].
-[zwanzig] :: [c3,-taus].
+[zwanzig] :: [c4].%[zwanzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[zwanzig] :: [c3].%[zwanzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[zwanzig] :: [c2].%[zwanzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[zwanzig] :: [c3,-taus].%[zwanzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [zwanzig] :: [c2,-tausU].
 [zig] :: [=c1,+zi,cundZIG].
-[zig] :: [=c1,+zi,c4].
-[zig] :: [=c1,+zi,c3].
-[zig] :: [=c1,+zi,c2].
-[zig] :: [=c1,+zi,c3,-taus].
+[zig] :: [=c1,+zi,c4].%[zig] :: [=c1,+zi,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[zig] :: [=c1,+zi,c3].%[zig] :: [=c1,+zi,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[zig] :: [=c1,+zi,c2].%[zig] :: [=c1,+zi,c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[zig] :: [=c1,+zi,c3,-taus].%[zig] :: [=c1,+zi,c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [zig] :: [=c1,+zi,c2,-tausU].
-[zehn] :: [=c1,+zeh,c4].
-[zehn] :: [=c1,+zeh,c3].
-[zehn] :: [=c1,+zeh,c2].
-[zehn] :: [=c1,+zeh,c3,-taus].
+[zehn] :: [=c1,+zeh,c4].%[zehn] :: [=c1,+zeh,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[zehn] :: [=c1,+zeh,c3].%[zehn] :: [=c1,+zeh,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[zehn] :: [=c1,+zeh,c2].%[zehn] :: [=c1,+zeh,c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[zehn] :: [=c1,+zeh,c3,-taus].%[zehn] :: [=c1,+zeh,c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [zehn] :: [=c1,+zeh,c2,-tausU].
-[zehn] :: [c4].
-[zehn] :: [c3].
-[zehn] :: [c2].
-[zehn] :: [c3,-taus].
+[zehn] :: [c4].%[zehn] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[zehn] :: [c3].%[zehn] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[zehn] :: [c2].%[zehn] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[zehn] :: [c3,-taus].%[zehn] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [zehn] :: [c2,-tausU].
-[vier] :: [c4].
-[vier] :: [c3].
-[vier] :: [c2].
-[vier] :: [c1,-zi].
+[vier] :: [c4].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot),epsLi([=c3,c4],dot)]
+[vier] :: [c3].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot)]
+[vier] :: [c2].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot)]
+[vier] :: [c1,-zi].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot)]
 [vier] :: [c1,-zi,-zeh,-unU].
-[undzwanzig] :: [=c1,+un,c4].
-[undzwanzig] :: [=c1,+un,c3].
-[undzwanzig] :: [=c1,+un,c2].
-[undzwanzig] :: [=c1,+un,c3,-taus].
+[undzwanzig] :: [=c1,+un,c4].%[undzwanzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[undzwanzig] :: [=c1,+un,c3].%[undzwanzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[undzwanzig] :: [=c1,+un,c2].%[undzwanzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[undzwanzig] :: [=c1,+un,c3,-taus].%[undzwanzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [undzwanzig] :: [=c1,+un,c2,-tausU].
-[undsiebzig] :: [=c1,+un,c4].
-[undsiebzig] :: [=c1,+un,c3].
-[undsiebzig] :: [=c1,+un,c2].
-[undsiebzig] :: [=c1,+un,c3,-taus].
+[undsiebzig] :: [=c1,+un,c4].%[undsiebzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[undsiebzig] :: [=c1,+un,c3].%[undsiebzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[undsiebzig] :: [=c1,+un,c2].%[undsiebzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[undsiebzig] :: [=c1,+un,c3,-taus].%[undsiebzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [undsiebzig] :: [=c1,+un,c2,-tausU].
-[undsechzig] :: [=c1,+un,c4].
-[undsechzig] :: [=c1,+un,c3].
-[undsechzig] :: [=c1,+un,c2].
-[undsechzig] :: [=c1,+un,c3,-taus].
+[undsechzig] :: [=c1,+un,c4].%[undsechzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[undsechzig] :: [=c1,+un,c3].%[undsechzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[undsechzig] :: [=c1,+un,c2].%[undsechzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[undsechzig] :: [=c1,+un,c3,-taus].%[undsechzig] :: [=c1,+un,c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [undsechzig] :: [=c1,+un,c2,-tausU].
-[und] :: [=cundZIG,=cun,c4].
-[und] :: [=cundZIG,=cun,c3].
-[und] :: [=cundZIG,=cun,c2].
-[und] :: [=cundZIG,=cun,c3,-taus].
+[und] :: [=cundZIG,=cun,c4].%[und] :: [=cundZIG,=cun,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[und] :: [=cundZIG,=cun,c3].%[und] :: [=cundZIG,=cun,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[und] :: [=cundZIG,=cun,c2].%[und] :: [=cundZIG,=cun,c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[und] :: [=cundZIG,=cun,c3,-taus].%[und] :: [=cundZIG,=cun,c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [und] :: [=cundZIG,=cun,c2,-tausU].
 [tausend] :: [=c3,=c3,+taus,c4].
 [tausend] :: [=c3,+taus,c4].
 [ssig] :: [=c1,+ssi,cundZIG].
-[ssig] :: [=c1,+ssi,c4].
-[ssig] :: [=c1,+ssi,c3].
-[ssig] :: [=c1,+ssi,c2].
-[ssig] :: [=c1,+ssi,c3,-taus].
+[ssig] :: [=c1,+ssi,c4].%[ssig] :: [=c1,+ssi,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[ssig] :: [=c1,+ssi,c3].%[ssig] :: [=c1,+ssi,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[ssig] :: [=c1,+ssi,c2].%[ssig] :: [=c1,+ssi,c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[ssig] :: [=c1,+ssi,c3,-taus].%[ssig] :: [=c1,+ssi,c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [ssig] :: [=c1,+ssi,c2,-tausU].
-[siebzig] :: [c4].
-[siebzig] :: [c3].
-[siebzig] :: [c2].
-[siebzig] :: [c3,-taus].
+[siebzig] :: [c4].%[siebzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[siebzig] :: [c3].%[siebzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[siebzig] :: [c2].%[siebzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[siebzig] :: [c3,-taus].%[siebzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [siebzig] :: [c2,-tausU].
-[siebzehn] :: [c4].
-[siebzehn] :: [c3].
-[siebzehn] :: [c2].
-[siebzehn] :: [c3,-taus].
+[siebzehn] :: [c4].%[siebzehn] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[siebzehn] :: [c3].%[siebzehn] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[siebzehn] :: [c2].%[siebzehn] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[siebzehn] :: [c3,-taus].%[siebzehn] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [siebzehn] :: [c2,-tausU].
-[sieben] :: [c4].
-[sieben] :: [c3].
-[sieben] :: [c3,-taus].
-[sieben] :: [c2].
-[sieben] :: [cun].
-[sieben] :: [c1,-un].
-[sieben] :: [c1].
-[sieben] :: [c2,-tausU].
+[sieben] :: [c4].%[sieben] :: [c1,-unU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,c2],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[sieben] :: [c3].%[sieben] :: [c1,-unU], [epsLi([=c3,+taus,c3],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c1,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,c3],dot)]
+[sieben] :: [c3,-taus].%[sieben] :: [c1,-unU], [epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot)]
+[sieben] :: [c2].%[sieben] :: [c1,-unU], [epsLi([=c1,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c2],dot)]
+[sieben] :: [cun].%[sieben] :: [c1,-unU], [epsLi([=c1,+unU,cun],dot)]
+[sieben] :: [c1,-un].%[sieben] :: [c1,-unU], [epsLi([=c1,+unU,c1,-un],dot)]
+[sieben] :: [c1].%[sieben] :: [c1,-unU], [epsLi([=c1,+unU,c1],dot)]
+[sieben] :: [c2,-tausU].%[sieben] :: [c1,-unU], [epsLi([=c1,+unU,c2,-tausU],dot)]
 [sieben] :: [c1,-unU].
-[sechzig] :: [c4].
-[sechzig] :: [c3].
-[sechzig] :: [c2].
-[sechzig] :: [c3,-taus].
+[sechzig] :: [c4].%[sechzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[sechzig] :: [c3].%[sechzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[sechzig] :: [c2].%[sechzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[sechzig] :: [c3,-taus].%[sechzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [sechzig] :: [c2,-tausU].
-[sechzehn] :: [c4].
-[sechzehn] :: [c3].
-[sechzehn] :: [c2].
-[sechzehn] :: [c3,-taus].
+[sechzehn] :: [c4].%[sechzehn] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[sechzehn] :: [c3].%[sechzehn] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[sechzehn] :: [c2].%[sechzehn] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[sechzehn] :: [c3,-taus].%[sechzehn] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [sechzehn] :: [c2,-tausU].
-[sechs] :: [c4].
-[sechs] :: [c3].
-[sechs] :: [c3,-taus].
-[sechs] :: [c2].
-[sechs] :: [cun].
-[sechs] :: [c1,-un].
-[sechs] :: [c1].
-[sechs] :: [c2,-tausU].
+[sechs] :: [c4].%[sechs] :: [c1,-unU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,c2],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[sechs] :: [c3].%[sechs] :: [c1,-unU], [epsLi([=c3,+taus,c3],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c1,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,c3],dot)]
+[sechs] :: [c3,-taus].%[sechs] :: [c1,-unU], [epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot)]
+[sechs] :: [c2].%[sechs] :: [c1,-unU], [epsLi([=c1,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c2],dot)]
+[sechs] :: [cun].%[sechs] :: [c1,-unU], [epsLi([=c1,+unU,cun],dot)]
+[sechs] :: [c1,-un].%[sechs] :: [c1,-unU], [epsLi([=c1,+unU,c1,-un],dot)]
+[sechs] :: [c1].%[sechs] :: [c1,-unU], [epsLi([=c1,+unU,c1],dot)]
+[sechs] :: [c2,-tausU].%[sechs] :: [c1,-unU], [epsLi([=c1,+unU,c2,-tausU],dot)]
 [sechs] :: [c1,-unU].
-[neun] :: [c4].
-[neun] :: [c3].
-[neun] :: [c2].
-[neun] :: [c1,-zi].
+[neun] :: [c4].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot),epsLi([=c3,c4],dot)]
+[neun] :: [c3].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot)]
+[neun] :: [c2].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot)]
+[neun] :: [c1,-zi].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot)]
 [neun] :: [c1,-zi,-zeh,-unU].
-[hundert] :: [=c2,=cun,c4].
-[hundert] :: [=c2,=cun,c3].
+[hundert] :: [=c2,=cun,c4].%[hundert] :: [=c2,=cun,c3,-taus], [epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[hundert] :: [=c2,=cun,c3].%[hundert] :: [=c2,=cun,c3,-taus], [epsLi([=c3,+taus,c3],dot)]
 [hundert] :: [=c2,=cun,c3,-taus].
-[hundert] :: [=c1,+un,c4].
-[hundert] :: [=c1,+un,c3].
+[hundert] :: [=c1,+un,c4].%[hundert] :: [=c1,+un,c3,-taus], [epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[hundert] :: [=c1,+un,c3].%[hundert] :: [=c1,+un,c3,-taus], [epsLi([=c3,+taus,c3],dot)]
 [hundert] :: [=c1,+un,c3,-taus].
-[fuenf] :: [c4].
-[fuenf] :: [c3].
-[fuenf] :: [c2].
-[fuenf] :: [c1,-zi].
+[fuenf] :: [c4].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot),epsLi([=c3,c4],dot)]
+[fuenf] :: [c3].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot)]
+[fuenf] :: [c2].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot)]
+[fuenf] :: [c1,-zi].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot)]
 [fuenf] :: [c1,-zi,-zeh,-unU].
-[elf] :: [c4].
-[elf] :: [c3].
-[elf] :: [c2].
-[elf] :: [c3,-taus].
+[elf] :: [c4].%[elf] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[elf] :: [c3].%[elf] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[elf] :: [c2].%[elf] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[elf] :: [c3,-taus].%[elf] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [elf] :: [c2,-tausU].
-[einundzwanzig] :: [c4].
-[einundzwanzig] :: [c3].
-[einundzwanzig] :: [c2].
-[einundzwanzig] :: [c3,-taus].
+[einundzwanzig] :: [c4].%[einundzwanzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[einundzwanzig] :: [c3].%[einundzwanzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[einundzwanzig] :: [c2].%[einundzwanzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[einundzwanzig] :: [c3,-taus].%[einundzwanzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [einundzwanzig] :: [c2,-tausU].
-[einundsiebzig] :: [c4].
-[einundsiebzig] :: [c3].
-[einundsiebzig] :: [c2].
-[einundsiebzig] :: [c3,-taus].
+[einundsiebzig] :: [c4].%[einundsiebzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[einundsiebzig] :: [c3].%[einundsiebzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[einundsiebzig] :: [c2].%[einundsiebzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[einundsiebzig] :: [c3,-taus].%[einundsiebzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [einundsiebzig] :: [c2,-tausU].
-[einundsechzig] :: [c4].
-[einundsechzig] :: [c3].
-[einundsechzig] :: [c2].
-[einundsechzig] :: [c3,-taus].
+[einundsechzig] :: [c4].%[einundsechzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[einundsechzig] :: [c3].%[einundsechzig] :: [c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[einundsechzig] :: [c2].%[einundsechzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[einundsechzig] :: [c3,-taus].%[einundsechzig] :: [c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [einundsechzig] :: [c2,-tausU].
-[einund] :: [=cundZIG,c4].
-[einund] :: [=cundZIG,c3].
-[einund] :: [=cundZIG,c2].
-[einund] :: [=cundZIG,c3,-taus].
+[einund] :: [=cundZIG,c4].%[einund] :: [=cundZIG,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[einund] :: [=cundZIG,c3].%[einund] :: [=cundZIG,c2,-tausU], [epsLi([=c2,c3],dot),epsLi([=c2,+tausU,c2],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c3,+taus,c3],dot)]
+[einund] :: [=cundZIG,c2].%[einund] :: [=cundZIG,c2,-tausU], [epsLi([=c2,+tausU,c2],dot)]
+[einund] :: [=cundZIG,c3,-taus].%[einund] :: [=cundZIG,c2,-tausU], [epsLi([=c2,+tausU,c3,-taus],dot)]
 [einund] :: [=cundZIG,c2,-tausU].
 [eintausend] :: [=c3,c4].
 [eintausend] :: [c4].
-[eins] :: [c4].
-[eins] :: [c3].
-[eins] :: [c2].
+[eins] :: [c4].%[eins] :: [c1], [epsLi([=c1,c2],dot),epsLi([=c2,c3],dot),epsLi([=c3,c4],dot)]
+[eins] :: [c3].%[eins] :: [c1], [epsLi([=c1,c2],dot),epsLi([=c2,c3],dot)]
+[eins] :: [c2].%[eins] :: [c1], [epsLi([=c1,c2],dot)]
 [eins] :: [c1].
-[einhundert] :: [=c2,c4].
-[einhundert] :: [=c2,c3].
+[einhundert] :: [=c2,c4].%[einhundert] :: [=c2,c3,-taus], [epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[einhundert] :: [=c2,c3].%[einhundert] :: [=c2,c3,-taus], [epsLi([=c3,+taus,c3],dot)]
 [einhundert] :: [=c2,c3,-taus].
-[einhundert] :: [c4].
-[einhundert] :: [c3].
+[einhundert] :: [c4].%[einhundert] :: [c3,-taus], [epsLi([=c3,+taus,c3],dot),epsLi([=c3,c4],dot)]
+[einhundert] :: [c3].%[einhundert] :: [c3,-taus], [epsLi([=c3,+taus,c3],dot)]
 [einhundert] :: [c3,-taus].
-[drei] :: [c4].
-[drei] :: [c3].
-[drei] :: [c2].
-[drei] :: [c1,-ssi].
+[drei] :: [c4].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c1,+ssi,+zeh,+unU,c1,-ssi],dot),epsLi([=c1,+ssi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot),epsLi([=c3,c4],dot)]
+[drei] :: [c3].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+ssi,+zeh,+unU,c1,-ssi],dot),epsLi([=c1,+ssi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot)]
+[drei] :: [c2].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+ssi,+zeh,+unU,c1,-ssi],dot),epsLi([=c1,+ssi,c1],dot),epsLi([=c1,c2],dot)]
+[drei] :: [c1,-ssi].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c1,+ssi,+zeh,+unU,c1,-ssi],dot)]
 [drei] :: [c1,-ssi,-zeh,-unU].
-[acht] :: [c4].
-[acht] :: [c3].
-[acht] :: [c2].
-[acht] :: [c1,-zi].
+[acht] :: [c4].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot),epsLi([=c3,c4],dot)]
+[acht] :: [c3].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c3,+taus,c3],dot),epsLi([=c2,+tausU,c3,-taus],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot),epsLi([=c2,c3],dot)]
+[acht] :: [c2].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c2,+tausU,c2],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c1,+unU,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+zeh,+unU,c1,-zeh],dot),epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot),epsLi([=c1,+zi,c1],dot),epsLi([=c1,c2],dot)]
+[acht] :: [c1,-zi].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,+zeh,+unU,c1,-zi],dot)]
 [acht] :: [c1,-zi,-zeh,-unU].
-[acht] :: [cun].
-[acht] :: [c1,-un].
-[acht] :: [c3,-taus].
-[acht] :: [c2,-tausU].
-[drei] :: [cun].
-[drei] :: [c1,-un].
-[drei] :: [c3,-taus].
-[drei] :: [c2,-tausU].
-[fuenf] :: [cun].
-[fuenf] :: [c1,-un].
-[fuenf] :: [c3,-taus].
-[fuenf] :: [c2,-tausU].
-[neun] :: [cun].
-[neun] :: [c1,-un].
-[neun] :: [c3,-taus].
-[neun] :: [c2,-tausU].
-[vier] :: [cun].
-[vier] :: [c1,-un].
-[vier] :: [c3,-taus].
-[vier] :: [c2,-tausU].
+[acht] :: [cun].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,cun],dot)]
+[acht] :: [c1,-un].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c1,-un],dot)]
+[acht] :: [c3,-taus].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot)]
+[acht] :: [c2,-tausU].%[acht] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot)]
+[drei] :: [cun].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c1,+ssi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,cun],dot)]
+[drei] :: [c1,-un].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c1,+ssi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c1,-un],dot)]
+[drei] :: [c3,-taus].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c1,+ssi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot)]
+[drei] :: [c2,-tausU].%[drei] :: [c1,-ssi,-zeh,-unU], [epsLi([=c1,+ssi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot)]
+[fuenf] :: [cun].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,cun],dot)]
+[fuenf] :: [c1,-un].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c1,-un],dot)]
+[fuenf] :: [c3,-taus].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot)]
+[fuenf] :: [c2,-tausU].%[fuenf] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot)]
+[neun] :: [cun].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,cun],dot)]
+[neun] :: [c1,-un].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c1,-un],dot)]
+[neun] :: [c3,-taus].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot)]
+[neun] :: [c2,-tausU].%[neun] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot)]
+[vier] :: [cun].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,cun],dot)]
+[vier] :: [c1,-un].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c1,-un],dot)]
+[vier] :: [c3,-taus].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot),epsLi([=c2,+tausU,c3,-taus],dot)]
+[vier] :: [c2,-tausU].%[vier] :: [c1,-zi,-zeh,-unU], [epsLi([=c1,+zi,c1],dot),epsLi([=c1,+zeh,c1],dot),epsLi([=c1,+unU,c2,-tausU],dot)]

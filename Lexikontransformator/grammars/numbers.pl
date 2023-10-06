@@ -1,5 +1,4 @@
 startCategory(c4).
-
 [ty] :: ([=c1, =ctee, c2]). % A + 10 * B
 [ty] :: ([=c1, +tee, c2]). % A * 10
 [teen] :: ([=c1, +tee, c2]). % A + 10
@@ -7,7 +6,6 @@ startCategory(c4).
 [hundred] :: ([=cnix, =c1, c3]). % 100 * B + epsilon
 [thousand] :: ([=c3, =c3, c4]). % A + 1000 * B
 [thousand] :: ([=cnix, =c3, c4]). % 100 * B + epsilon
-
 [one] :: ([c1]). % 1
 [two] :: ([c1]). % 2
 [three] :: ([c1]). % 3
@@ -31,9 +29,6 @@ startCategory(c4).
 [fifty] :: ([=c1, c2]). % A + 50
 [y] :: ([=c1, +ee, c2]). % 0 * A + 80
 [y] :: ([=c1, =cee, c2]). % A + 0 * B + 80
-
-
-
 [] :: ([=c1, c4]). % epsilon
 [] :: ([=c1, c2]). % epsilon
 [] :: ([=c2, c3]). % epsilon
@@ -43,7 +38,5 @@ startCategory(c4).
 [] :: ([=c1, +tee, c1]). % epsilon
 [] :: ([=c1, +tee, c2]). % epsilon
 [] :: ([=c1, +ee, c1]). % epsilon
-
-
 [] :: ([=c1, +ee, cee]). % epsilon
 [] :: ([cnix]). % epsilon
