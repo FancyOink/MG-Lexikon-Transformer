@@ -32,7 +32,7 @@ debugMode:- false.
 % Die Liste soll dann in der Main-Fkt. mit assert "festgesetzt" werden. -> Sonst unständliche Form der Einträge, wegen Modul.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 exterminate(NewEtaLi) :- 	
-			setof(li([W],FsW,(FsW,[[]])),([W]::FsW),EtaLi),findall(epsLi(FsE,clean),([]::FsE),EpsLi),	% get all Li from the Lexicon and build new forms for them
+			setof(li([W],FsW,(FsW,[[]])),([W]::FsW),PureEtaLi),findall(epsLi(FsE,clean),([]::FsE),EpsLi),getKomplexEpsLI(EpsLi,KompEpsLi),append(PureEtaLi,KompEpsLi,EtaLi),	% get all Li from the Lexicon and build new forms for them
 			combFeatures(EtaLi,EpsLi,CFeatEtaLi,MarkEpsLi),	% 1. step of extermination (Initial round)
 			(debugMode -> write("Old Eta: "),writeln(EtaLi),write("Epsilon: "),writeln(EpsLi),write("New Eta: "),writeln(CFeatEtaLi),write("New Epsilon: "),writeln(MarkEpsLi);true),
 			createChains(EtaLi,[],MarkEpsLi,[],[],NewChains,NewMarkEps,NewHist), % 4. step of extermination (Initial round)
@@ -40,9 +40,9 @@ exterminate(NewEtaLi) :-
 			length(EtaLi,Leta),length(CFeatEtaLi,LNewEta),length(NewChains,LChains),
 			(debugMode ->write("#Eta: "), write(Leta),write(" #NewEta: "), writeln( LNewEta);true),
 			(debugMode ->write("#Chains: "),writeln(LChains);true),
-			( ((Leta < LNewEta);(LChains > 0)) -> loopExtermination(CFeatEtaLi,NewChains,NewMarkEps,NewHist,NewEtaLiDeep,ReEpsLi),NewEtaLi = (NewEtaLiDeep,ReEpsLi)% 5. Step of extermination (Initial round) + Loop
+			( ((Leta < LNewEta);(LChains > 0)) -> loopExtermination(CFeatEtaLi,NewChains,NewMarkEps,NewHist,NewEtaLiDeep,ReEpsLi),afterCare(NewEtaLiDeep,ReEpsLi,NewEtaLi)% 5. Step of extermination (Initial round) + Loop
 			; (debugMode -> writeln("No loop!");true)
-			, NewEtaLi = (EtaLi,EpsLi)). % 6.Step (Initial round)
+			, afterCare(EtaLi,EpsLi,NewEtaLi)). % 6.Step (Initial round)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % loopExtermination(+[EtaLis],+[Chains],+[EpsLis],+[ChainHist],-[EtaLis],-[EpsLi])
@@ -82,6 +82,25 @@ loopExtermination(EtaLi,Chains,EpsLi,Hist,NewEtaLi,NewEpsLi):-
 			, cleanEpsList(EpsLi,CleanEpsLis)
 			, (debugMode->write("Final Eta: "),writeln(EtaLi),write("Epsilon: "),writeln(CleanEpsLis);true)
 			, NewEtaLi = EtaLi,NewEpsLi = CleanEpsLis). % 6.step -> Fehlt noch die Löschfunktion für die Epsilon-Li
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% getKomplexEpsLI(+[Epsilon_Li],-[Eta_Li])
+%
+%	filters Epsilon-LI, that have more than 1 Selektor and constructs them as an Eta-LI 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+getKomplexEpsLI([],[]).
+getKomplexEpsLI([epsLi([=A,=B|FsRest],clean)|Rest],KompEpsLi):- getKomplexEpsLI(Rest,DeeperKompEps),KompEpsLi = [li([epsilon],[=A,=B|FsRest],([=A,=B|FsRest],[[]]))|DeeperKompEps].
+getKomplexEpsLI([_|Rest],KompEpsLi):- getKomplexEpsLI(Rest,KompEpsLi).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% afterCare(+[EtaLi],+[EpsLi],-([NewEtaLi],[NewEpsLi])
+%
+%	filters place holder Eta-Li out and inserts them into Epsilon-Li
+%	currently delets History of new Epsilin-LI
+%	If the history of new Epsilon-LI is of interest, just comment afterCare out and replace it with NewEtaLi = (EtaLi,EpsLi) or similar
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+afterCare([],EpsLi,([],EpsLi)).
+afterCare([li([epsilon],Fs,(_,_))|RestEta],EpsLi,(NewEtaLi,NewEpsLi)):-afterCare(RestEta,EpsLi,(NewEtaLi,DeeperEps)), NewEpsLi = [epsLi(Fs,clean)|DeeperEps].
+afterCare([EtaLi|RestEta],EpsLi,(NewEtaLi,NewEpsLi)):- afterCare(RestEta,EpsLi,(DeeperEta,NewEpsLi)),NewEtaLi = [EtaLi|DeeperEta]. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
