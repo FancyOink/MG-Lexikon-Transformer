@@ -1,5 +1,5 @@
 # MG-Lexikon-Transformer
-Transforms MG-lexokons. Currently only removes epsilon-LI as much as possible.
+Transforms MG-lexikons. Currently only removes epsilon-LI as much as possible.
 The grammars folder contains lexicons for numerical grammars in 261 languages and dialects taken from https://github.com/ikmMaierBTUCS/Algorithm-to-Automatically-Generate-Minimalist-Numeral-Grammars.git
 The grammars_old folder contains older versions of the numeral grammars and the transformed.
 
